@@ -1,0 +1,59 @@
+body {
+    background-color: #ffe8d6;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 115px;
+  }
+  
+  form {
+    width: 600px;
+    line-height: 70px;
+    background-color: #ffe8d6;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 0 0 20px 130px;
+    font-size: 40px;
+    font-family: "Bacasime Antique", serif;
+    font-weight: 40;
+  }
+  
+  .sub {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  label {
+    margin-inline: 15px;
+    width: 130px;
+    font-size: 22px;
+    font-family: "Bacasime Antique", serif;
+    font-weight: 30;
+  }
+  input {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 25%;
+    padding: 10px;
+    background-color: #ff971d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 300px;
+    font-size: 30px;
+    font-family: "Bacasime Antique", serif;
+  }
+  
