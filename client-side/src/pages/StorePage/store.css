@@ -1,11 +1,13 @@
- body {
+body {
     background-color: #ffe8d6;
+    margin: 0;
+    padding: 0;
   }
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 115px;
+    margin-top: 70px;
   }
   
   form {
@@ -18,12 +20,12 @@
   }
   
   h2 {
-    color: #ff570c;
+    color: orange;
     text-align: center;
     margin: 0 0 20px 130px;
     font-size: 40px;
     font-family: "Bacasime Antique", serif;
-    font-weight: 120;
+    font-weight: 200;
   }
   
   .sub {
@@ -48,7 +50,7 @@
   button {
     width: 25%;
     padding: 10px;
-    background-color: #ff570c;
+    background-color: orange;
     color: white;
     border: none;
     border-radius: 5px;
