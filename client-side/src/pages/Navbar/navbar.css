@@ -4,6 +4,7 @@
     width: 100%;
     background-color: orange;
     display: flex;
+    top: 0;
 }
 .nav-heading{
     margin-left: 2rem;

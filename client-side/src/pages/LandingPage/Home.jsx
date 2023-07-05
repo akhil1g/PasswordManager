@@ -1,10 +1,10 @@
 import React from "react";
-// import Header from "./Header";
-// import Footer from "./Footer";
+import Navbar from "../Navbar/Navbar";
+
 function Home() {
   return (
     <div className="root">
-      {/* <Header /> */}
+      <Navbar />
       <h1>Hello, User</h1>
       <h2>What would you like to do?</h2>
       <div className="root-container">
