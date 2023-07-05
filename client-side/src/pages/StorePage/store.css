@@ -1,4 +1,4 @@
-body {
+ body {
     background-color: #ffe8d6;
   }
   .container {
@@ -18,11 +18,12 @@ body {
   }
   
   h2 {
+    color: #ff570c;
     text-align: center;
     margin: 0 0 20px 130px;
     font-size: 40px;
     font-family: "Bacasime Antique", serif;
-    font-weight: 40;
+    font-weight: 120;
   }
   
   .sub {
@@ -47,7 +48,7 @@ body {
   button {
     width: 25%;
     padding: 10px;
-    background-color: #ff971d;
+    background-color: #ff570c;
     color: white;
     border: none;
     border-radius: 5px;
