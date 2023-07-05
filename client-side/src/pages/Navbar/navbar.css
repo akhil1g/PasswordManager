@@ -1,0 +1,14 @@
+.nav-box{
+    margin: 0;
+    height: 80px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+}
+.nav-heading{
+    margin-left: 2rem;
+    margin-top: 1.8rem;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
