@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 // import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 
 function Main() {
@@ -15,9 +16,12 @@ function Main() {
     }
 
   return (
-    <div className="container">
+    <div>
+        <Navbar />
+        <div className="upper-container">
+    <div className="container-main">
       <div className="left-sec" >
-        <h1>Password Manager</h1>
+        <span className="main-heading1">Password Manager</span>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -43,6 +47,8 @@ function Main() {
             onClick={handleLogin}
         >Login</button>
       </div>
+    </div>
+    </div>
     </div>
   );
 }

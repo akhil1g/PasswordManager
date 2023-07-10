@@ -1,35 +1,29 @@
-html, body, #root{
-    background-color: #FFE8D6;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: inherit;
+html{
+    overflow: scroll;
+    overflow-x: hidden;
 }
-.container {
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+body{
+    background-color: #FFE8D6;
+    /* text-align: center; */
+    /* display: inherit; */
+}
+.upper-container{
+    width: 100%;
+}
+.container-main{
     display: flex;
+    width: 100%;
     background-image: url('./bgimage.webp');
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
     background-repeat: no-repeat ;
-}
-.left-sec h1 {
-    background-color: transparent;
-    margin-bottom: 10px;
-    text-align: left;
-    letter-spacing: 1px;
-    font-size: xx-large;
-    font-family: "Bacasacasimeime Antique", serif;
-}
-.left-sec p{
-    background-color: transparent;
-    text-align: left;
-    font-size: large;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    font-family: "Montserrat", sans-serif;
 }
 .left-sec {
     background-color: transparent;
@@ -40,9 +34,26 @@ html, body, #root{
     height: 80vh;
     max-height: fit-content;
 }
+.main-heading1{
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: xx-large;
+    font-family: "Bacasacasimeime Antique", serif;
+}
+.left-sec p{
+    background-color: transparent;
+    text-align: left;
+    font-size: large;
+    letter-spacing: 1.5px;
+    font-family: "Montserrat", sans-serif;
+}
 .right-sec h3{
     font-family: "Bacasime Antique", serif;
-    background-color: transparent;
+    /* background-color: transparent; */
     margin-bottom: 30px;
     text-align: center;
     letter-spacing: 1px;
@@ -54,18 +65,16 @@ html, body, #root{
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 15px;
-    font-size: larger;
     font-family: "Montserrat", sans-serif;
-    font-weight:900;
+    font-weight:600;
 }
-.right-sec {
+.right-sec{
     background-color: transparent;
     padding: 20px;
     margin-top: 5%;
     margin-left: 34%;
     width: 20vw;
     height: fit-content;
-    /* border: 2px solid black; */
     display: flex;
     display: table-column;
     align-items: center;
@@ -95,19 +104,19 @@ html, body, #root{
   }
   
 @media only screen and (max-width: 768px){
-    .container {
+    .container-main{
         flex-direction: column;
         background-attachment: fixed;
         background-position: center;
     }
-    .left-sec {
+    .left-sec{
         order: 1;
         margin: 20% auto 0 auto;
         width: 85%;
         height: auto;
         padding: 0;
     }
-    .left-sec h1{
+    .lmain-heading1{
         margin-top: 0;
         text-align: center;
         font-size: x-large;
@@ -134,3 +143,8 @@ html, body, #root{
         margin-bottom: 0;
     }
 }
+
+
+
+
+
