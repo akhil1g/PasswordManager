@@ -1,0 +1,73 @@
+/* *,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bacasime Antique", serif; */
+}
+/* body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE8D6;
+} */
+.container {
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* h3{
+
+} */
+.display-container {
+    position: relative;
+    background-color: orange;
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid var(--lt-violet2);
+    margin: 1rem 0;
+}
+.display {
+    width: 100%;
+    /* background-color: transparent; */
+    /* padding: 1.15rem 1rem; */
+    /* color: orange; */
+    /* font-weight: 600; */
+    /* font-size: 1.5rem;
+    line-height: 30px;
+    padding-right: 3.25rem;
+    border:none; */
+  }
+.display::placeholder {
+    /* position:absolute; */
+    /* top: 50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height:30px; */
+    transform: translateY(-50%);
+}
+/* .display-container button {
+    position:absolute;
+    top:50%;
+    right:1.5rem;
+    transform: translateY(-50%);
+} */
+.input-container{
+    width:100%;
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    /* padding: 2rem;
+    border-bottom: 0.35rem solid var(--lt-violet2); */
+}
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
