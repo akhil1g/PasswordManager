@@ -8,10 +8,10 @@ function Main() {
 
     const navigate = useNavigate();
     function handleLogin(){
-        navigate('./Login');
+        navigate('./login');
     }
     function handleRegister(){
-        navigate('./Register');
+        navigate('./register');
     }
 
   return (
@@ -34,7 +34,7 @@ function Main() {
         <p>Get started by creating an account with us.</p>
         <button 
             className="register-btn"
-            onClick={(e) => handleRegister()}
+            onClick={handleRegister}
         >Register</button>
         <p>Already an User?</p>
         <p>Click below to continue.</p>
