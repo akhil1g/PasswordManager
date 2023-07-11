@@ -12,7 +12,7 @@ import Main from './pages/MainPage/Main.jsx';
 export default function App() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <BrowserRouter>
       <Routes>
       <Route path='/' exact Component={Main}/>
