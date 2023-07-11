@@ -56,7 +56,7 @@ function Store() {
             onChange={handleChange}
           />
         </div>
-        <div className="sub">
+        <div className="sub-store-container">
           <label className="store-label">Password: </label>
           <input
             className="store-input"
@@ -68,10 +68,11 @@ function Store() {
             onChange={handleChange}
           />
         </div>
-        <div className="sub">
+        <div className="sub-store-container">
           <label className="store-label">Add a Note: </label>
           <textarea
-            className="store-input"
+            className="store-add-note"
+            rows="5"
             type="text"
             id="note"
             placeholder="add a note...."
@@ -89,4 +90,5 @@ function Store() {
 }
 
 export default Store;
+
   

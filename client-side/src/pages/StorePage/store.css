@@ -1,62 +1,98 @@
 body {
     background-color: #ffe8d6;
+    background-size: cover;
     margin: 0;
     padding: 0;
   }
-  .container {
+  .store-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    margin-top: 70px;
+    height: 100vh;
   }
-  
-  form {
-    width: 600px;
-    line-height: 70px;
-    background-color: #ffe8d6;
-    padding: 30px;
-    border-radius: 10px;
+  .store-form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 60%;
+    height: 70%;
+    padding: 3%;
   }
-  
-  h2 {
+  .store-heading {
+    font-family: "Bacasime Antique", serif;
+    letter-spacing: 1.5px;
     color: orange;
     text-align: center;
-    margin: 0 0 20px 130px;
     font-size: 40px;
-    font-family: "Bacasime Antique", serif;
-    font-weight: 200;
   }
-  
-  .sub {
+  .sub-store-container {
     display: flex;
-    margin-bottom: 10px;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 3%;
   }
-  label {
-    margin-inline: 15px;
-    width: 130px;
-    font-size: 22px;
-    font-family: "Bacasime Antique", serif;
-    font-weight: 30;
+  .store-label {
+    width: 15%;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 10px;
   }
-  input {
-    width: 85%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  .store-input {
+    margin-left: 0;
+    padding: 5px;
+    width: 75%;
+    font-size: 18px;
+    border: none;
+    box-shadow: 3px 5px 10px #393646;
   }
-  
-  button {
-    width: 25%;
-    padding: 10px;
+  .store-add-note {
+    padding: 5px;
+    width: 75%;
+    font-size: 18px;
+    box-shadow: 3px 5px 10px #393646;
+  }
+  .store-button {
+    margin-top: 1%;
+    width: 200px;
+    height: 40px;
     background-color: orange;
     color: white;
-    border: none;
     border-radius: 5px;
+    border: none;
     cursor: pointer;
-    margin-left: 300px;
-    font-size: 30px;
-    font-family: "Bacasime Antique", serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    box-shadow: 3px 5px 10px #393646;
+  }
+  .store-button:hover {
+    background-color: white;
+    color: black;
+  }
+  @media (max-width: 640px) {
+    .store-form {
+      width: 85%;
+      height: 80%;
+    }
+    .sub-store-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 10%;
+    }
+    .store-label {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    .store-input {
+      width: 90%;
+    }
+    .store-add-note {
+      width: 90%;
+    }
+    .store-button {
+      width: 150px;
+    }
   }
   
