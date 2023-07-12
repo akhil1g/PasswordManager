@@ -1,0 +1,99 @@
+.store-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Bacasime Antique", serif;
+}
+.store-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 70%;
+    padding: 3%;
+    margin-top: 0px;
+}
+.store-heading {
+    letter-spacing: 1.5px;
+    color: orange;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 4%;
+}
+.sub-store-container {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.store-label {
+    width: 15%;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 10px;
+}
+.store-input {
+    margin-left: 0;
+    padding: 5px;
+    width: 75%;
+    font-size: 15px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+.store-input:hover, .store-add-note:hover{
+    box-shadow: 3px 5px 10px rgba(245, 79, 13, 0.719);
+}
+.store-add-note {
+    padding: 5px;
+    width: 75%;
+    border: none;
+    font-size: 18px;
+}
+.store-button {
+    margin-top: 1%;
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: "Bacasime Antique", serif;
+    box-shadow: 3px 5px 10px rgba(245, 79, 13, 0.719);
+}
+.store-button:hover {
+    background-color: rgba(245, 79, 13, 0.719);
+    color: black;
+}
+@media (max-width: 640px) {
+    .store-form {
+        width: 85%;
+        height: 80%;
+    }
+    .sub-store-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .store-label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .store-input {
+        width: 90%;
+    }
+    .store-add-note {
+        width: 90%;
+    }
+    .store-button {
+        width: 150px;
+    }
+}
+  

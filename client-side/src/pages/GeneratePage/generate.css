@@ -1,0 +1,160 @@
+.gen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Bacasime Antique", serif;
+}
+.gen-heading1 {
+    color: orange;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: "Bacasime Antique", serif;
+    font-weight: 100;
+}
+.gen-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 70%;
+    padding: 3%;
+}
+.gen-result {
+    background-color: white;
+    width: 50%;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.gen-output {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+}
+.gen-clipboard {
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.gen-clipboard:hover {
+    background-color: rgba(245, 79, 13, 0.719);
+    color: black;
+}
+.gen-box {
+    width: 48%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gen-field {
+    width: 95%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    box-shadow: 3px 5px 10px rgba(245, 79, 13, 0.719);
+}
+.gen-label {
+    width: 100%;
+    padding: 3px 200px 3px 10px;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+.gen-input {
+    letter-spacing: 1.5px;
+}
+input[type="number"] {
+    background-color: white;
+    width: 50px;
+    height: 20px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    align-items: center;
+    padding-right: 0px;
+    font-size: 15px;
+    border-width: thin;
+}
+input[type="checkbox"] {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+.gen-btn {
+    margin-top: 3%;
+    width: 180px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: "Bacasime Antique", serif;
+    box-shadow: 3px 5px 10px rgba(245, 79, 13, 0.719);
+}
+.gen-btn:hover {
+    background-color: rgba(245, 79, 13, 0.719);
+    color: black;
+}
+@media (max-width: 640px) {
+    .gen-heading1 {
+        font-size: 30px;
+    }
+    .gen-form {
+        width: 85%;
+        height: 80%;
+        margin-top: 20px;
+    }
+    .gen-result {
+        width: 100%;
+        height: 60px;
+    }
+    .gen-output {
+        margin: 0;
+        padding: 5px;
+    }
+    .gen-box {
+        width: 100%;
+    }
+    .gen-label {
+        padding: 0;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    input[type="number"] {
+        width: 40px;
+        height: 13px;
+    }
+    input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+    }
+    .gen-btn {
+        width: 150px;
+    }
+}  
