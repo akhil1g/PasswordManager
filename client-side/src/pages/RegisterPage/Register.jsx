@@ -19,18 +19,21 @@ const Register=function()
             },
             body:JSON.stringify({name,email,password}),
         });
-        const data=await response.json;
+        const data=await response.json();
+        if(data.status==='ok')
+        window.location.href="./login";
         console.log(data);
     }
 
     return (
         <div>
             <Navbar />
-            <div className="container">
+            <div className="outer-container-register">
+            <div className="container-register">
             <form onSubmit={registerUser}>
-            <h1>Register</h1>
-            <div className="sub">
-            <label>Name : </label>
+            <h1 className="reg-heading">Register</h1>
+            <div className="sub-register">
+            <label className="label-register">Name : </label>
                 <input value={name} 
                 onChange={function(e){
                     setName(e.target.value)
@@ -40,7 +43,7 @@ const Register=function()
                  name="name"></input>
             </div>
             <div className="sub">
-            <label>Email : </label>
+            <label className="label-register">Email : </label>
                 <input value={email} 
                  onChange={function(e){
                     setEmail(e.target.value)
@@ -50,7 +53,7 @@ const Register=function()
                  name="email"></input>
             </div>
             <div className="sub">
-            <label>Password : </label>
+            <label className="label-register">Password : </label>
                 <input value={password}
                  onChange={function(e){
                     setPassword(e.target.value)
@@ -59,9 +62,11 @@ const Register=function()
                  placeholder="*****" 
                  name="password"></input>
             </div>
-                 <input type="submit" value="Register" className="button"></input>
+            <div className="button-conatiner">
+                 <input type="submit" value="Register" className="button"></input></div>
             </form>
             </div>
+        </div>
         </div>
     )
 }

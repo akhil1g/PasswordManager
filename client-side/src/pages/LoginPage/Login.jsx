@@ -9,6 +9,7 @@ const Login=function()
     async function loginUser(event)
     {
         event.preventDefault();
+        console.log(email,password);
         const response=await fetch('http://localhost:2000/api/login',{
             method:"POST",
             headers:{
@@ -16,18 +17,32 @@ const Login=function()
             },
             body:JSON.stringify({email,password}),
         });
-        const data=await response.json;
+        const data=await response.json();
         console.log(data);
+        if(data.user)
+        {
+            localStorage.setItem('token',data.user);
+
+            
+            alert('Login Successful');
+            
+            window.location.href='./Home';
+        }
+        else
+        {
+            alert('Please check your Username and PassWord carefully');
+        }
     }
 
     return (
         <div>
             <Navbar />
-            <div className="container">
+            <div className="outer-container">
+            <div className="container-login">
             <form onSubmit={loginUser}>
-            <h1>Login</h1>
+            <h1 className="login-heading">Login</h1>
             <div className="sub">
-                <label>Email : </label>
+                <label className="label-login">Email : </label>
                     <input value={email} 
                     onChange={function(e){
                         setEmail(e.target.value)
@@ -38,7 +53,7 @@ const Login=function()
                     </input>
             </div>
             <div className="sub">
-                <label>Password : </label>
+                <label className="label-login">Password : </label>
                     <input value={password}
                     onChange={function(e){
                         setPassword(e.target.value)
@@ -47,8 +62,10 @@ const Login=function()
                     placeholder="*****" 
                     name="password"></input>
             </div>
-                 <input type="submit" value="Login" className="button"></input>
+              <div className="button-container">
+                 <input type="submit" value="Login" className="submit-button"></input> </div>
             </form>
+            </div>
             </div>
             </div>
     )
