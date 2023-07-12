@@ -15,7 +15,12 @@ function Main() {
             <div className="main-left-sec" >
                 <span className="main-heading1">Password Manager</span>
                 <p className="main-left-sec-para">
-                Elevate your online security with a password manager app. Generate, store, and auto-fill strong passwords effortlessly. Enjoy one-click logins and worry-free browsing. Protect your digital identity with advanced encryption algorithms. Upgrade now and experience a safer, simpler online world!
+                    Elevate your online security with a password manager app. 
+                    Generate, store, and auto-fill strong passwords effortlessly. 
+                    Seamlessly manage and organize your credentials, never again struggling to recall forgotten passwords. 
+                    Enjoy one-click logins and worry-free browsing. 
+                    Protect your digital identity with advanced encryption algorithms. 
+                    Upgrade now and experience a safer, simpler online world!
                 </p>
             </div>
             <div className="main-right-sec">
