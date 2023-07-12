@@ -1,25 +1,4 @@
-/* DONE */
-
-html{
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0;  
-    background: transparent; 
-}
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
-body{
-    background-color: #FFE8D6;
-    /* text-align: center; */
-    /* display: inherit; */
-}
-.upper-container{
-    width: 100%;
-}
-.container-main{
+.main-container{
     display: flex;
     width: 100%;
     background-image: url('./bgimage.webp');
@@ -27,7 +6,7 @@ body{
     background-position: center;
     background-repeat: no-repeat ;
 }
-.left-sec {
+.main-left-sec {
     background-color: transparent;
     padding: 20px;
     margin: 90px 50px 10px;
@@ -44,34 +23,14 @@ body{
     text-align: left;
     letter-spacing: 1px;
     font-size: xx-large;
-    font-family: "Bacasacasimeime Antique", serif;
 }
-.left-sec p{
-    background-color: transparent;
+.main-left-sec-para{
     text-align: left;
     font-size: large;
     letter-spacing: 1.5px;
     font-family: "Montserrat", sans-serif;
 }
-.right-sec h3{
-    font-family: "Bacasime Antique", serif;
-    /* background-color: transparent; */
-    margin-bottom: 30px;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: xx-large;
-}
-.right-sec p {
-    background-color: transparent;
-    text-align: left;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-weight:600;
-}
-.right-sec{
-    background-color: transparent;
+.main-right-sec{
     padding: 20px;
     margin-top: 5%;
     margin-left: 34%;
@@ -82,6 +41,21 @@ body{
     align-items: center;
     justify-content: center;
 }
+.main-heading2{
+    font-family: "Bacasime Antique", serif;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: xx-large;
+}
+.main-right-sec-para{
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
 .login-btn,
 .register-btn {
     padding: 5px 10px;
@@ -91,8 +65,7 @@ body{
     color: white;
     cursor: pointer;
     box-shadow: 5px 10px 10px gray;
-    margin-left: 0;
-    margin-bottom: 30px;
+    margin: 0 auto 30px 0;
     width: 45%;
     min-width: fit-content;
     height: 40px;
@@ -106,40 +79,40 @@ body{
   }
   
 @media only screen and (max-width: 768px){
-    .container-main{
+    .main-container{
         flex-direction: column;
         background-attachment: fixed;
         background-position: center;
     }
-    .left-sec{
+    .main-left-sec{
         order: 1;
         margin: 20% auto 0 auto;
         width: 85%;
         height: auto;
         padding: 0;
     }
-    .lmain-heading1{
+    .main-heading1{
         margin-top: 0;
         text-align: center;
         font-size: x-large;
     }
-    .left-sec p{
+    .main-left-sec-para{
         font-size: medium;
         letter-spacing: 1.4px;
         margin-bottom: 0;
     }
-    .right-sec {
+    .main-right-sec {
         order: 2;
         margin: 0 auto 0 auto;
         width: 85%;
         height: auto;
         padding: 0;
     }
-    .right-sec h3{
+    .main-heading2{
         font-size: x-large;
         margin-bottom: 0;
     }
-    .right-sec p{
+    .main-right-sec-para{
         font-size: medium;
         letter-spacing: 1.4px;
         margin-bottom: 0;

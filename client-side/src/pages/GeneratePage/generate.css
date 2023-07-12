@@ -1,100 +1,160 @@
-body {
-    background-color: #ffe8d6;
-    margin: 0;
-    padding: 0;
-  }
-  h1{
-    display: block;
+.gen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Bacasime Antique", serif;
+}
+.gen-heading1 {
     color: orange;
     text-align: center;
-    margin: 10px 0 0 0px;
+    margin-top: 30px;
+    margin-bottom: 0;
     font-size: 40px;
     font-family: "Bacasime Antique", serif;
-    font-weight: 200;
-  }
-.outer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    font-weight: 100;
 }
-.container{
-  width: 100%;
-  max-width: 500px;
-}
-form {
-  width: 100%;
-  font-size: 20px;
-}
-.result {
-  background-color: white;
-  position: relative;
-  margin-bottom: 30px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-.output {
-  background-color: transparent;
-  width: 85%;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  padding: 10px;
-}
-.clipboard {
-  justify-content: center;
-  background-color: orange;
-  color: white;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  width: 15%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-}
-.field {
-    height: 50px;
-    margin-top: 5px;
-    border-radius: 4px;
+.gen-form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    width: 60%;
+    height: 70%;
+    padding: 3%;
+}
+.gen-result {
+    background-color: white;
+    width: 50%;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.gen-output {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+}
+.gen-clipboard {
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.gen-clipboard:hover {
+    background-color: rgba(245, 79, 13, 0.719);
+    color: black;
+}
+.gen-box {
+    width: 48%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gen-field {
+    width: 95%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
     align-items: center;
     padding-right: 10px;
-  }
-.field input[type='number'] {
-  width: 50px;
-  height: 40px;
-  border: none;
-  align-items: center;
-  padding-right: 0px;
-  font-size: 16px;
-  background-color: white;
+    box-shadow: 3px 5px 10px rgba(245, 79, 13, 0.719);
 }
-.field label {
-  width: 100%;
-  padding-right: 200px;
+.gen-label {
+    width: 100%;
+    padding: 3px 200px 3px 10px;
+    font-size: 22px;
+    letter-spacing: 1.5px;
 }
-button{
-  display: inline-block;
-  width: 100%;
-  border: none;
-  height: 50px;
-  background-color:orange;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  margin-top: 30px;
-  border-radius: 6px;
+.gen-input {
+    letter-spacing: 1.5px;
 }
-
-@media only screen and (max-width: 678px) {
-  .field {
-    font-size: 16px;
-  }
+input[type="number"] {
+    background-color: white;
+    width: 50px;
+    height: 20px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    align-items: center;
+    padding-right: 0px;
+    font-size: 15px;
+    border-width: thin;
 }
+input[type="checkbox"] {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+.gen-btn {
+    margin-top: 3%;
+    width: 180px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: "Bacasime Antique", serif;
+    box-shadow: 3px 5px 10px rgba(245, 79, 13, 0.719);
+}
+.gen-btn:hover {
+    background-color: rgba(245, 79, 13, 0.719);
+    color: black;
+}
+@media (max-width: 640px) {
+    .gen-heading1 {
+        font-size: 30px;
+    }
+    .gen-form {
+        width: 85%;
+        height: 80%;
+        margin-top: 20px;
+    }
+    .gen-result {
+        width: 100%;
+        height: 60px;
+    }
+    .gen-output {
+        margin: 0;
+        padding: 5px;
+    }
+    .gen-box {
+        width: 100%;
+    }
+    .gen-label {
+        padding: 0;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    input[type="number"] {
+        width: 40px;
+        height: 13px;
+    }
+    input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+    }
+    .gen-btn {
+        width: 150px;
+    }
+}  

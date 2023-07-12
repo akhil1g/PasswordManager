@@ -1,60 +1,58 @@
-/* DONE */
-
-body {
-    background-color: #ffe8d6;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-  }
-  .store-container {
+.store-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-  }
-  .store-form {
+    height: 100%;
+    font-family: "Bacasime Antique", serif;
+}
+.store-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
     height: 70%;
     padding: 3%;
-  }
-  .store-heading {
-    font-family: "Bacasime Antique", serif;
+    margin-top: 0px;
+}
+.store-heading {
     letter-spacing: 1.5px;
     color: orange;
     text-align: center;
     font-size: 40px;
-  }
-  .sub-store-container {
+    font-weight: 100;
+    margin-bottom: 4%;
+}
+.sub-store-container {
     display: flex;
     justify-content: left;
     width: 100%;
     margin-bottom: 3%;
-  }
-  .store-label {
+}
+.store-label {
     width: 15%;
     text-align: left;
     font-size: 23px;
     padding-right: 10px;
-  }
-  .store-input {
+}
+.store-input {
     margin-left: 0;
     padding: 5px;
     width: 75%;
-    font-size: 18px;
+    font-size: 15px;
     border: none;
-    box-shadow: 3px 5px 10px #393646;
-  }
-  .store-add-note {
+    font-family: "Montserrat", sans-serif;
+}
+.store-input:hover, .store-add-note:hover{
+    box-shadow: 3px 5px 10px rgba(245, 79, 13, 0.719);
+}
+.store-add-note {
     padding: 5px;
     width: 75%;
+    border: none;
     font-size: 18px;
-    box-shadow: 3px 5px 10px #393646;
-  }
-  .store-button {
+}
+.store-button {
     margin-top: 1%;
     width: 200px;
     height: 40px;
@@ -65,36 +63,37 @@ body {
     cursor: pointer;
     font-size: 22px;
     letter-spacing: 2px;
-    box-shadow: 3px 5px 10px #393646;
-  }
-  .store-button:hover {
-    background-color: white;
+    font-family: "Bacasime Antique", serif;
+    box-shadow: 3px 5px 10px rgba(245, 79, 13, 0.719);
+}
+.store-button:hover {
+    background-color: rgba(245, 79, 13, 0.719);
     color: black;
-  }
-  @media (max-width: 640px) {
+}
+@media (max-width: 640px) {
     .store-form {
-      width: 85%;
-      height: 80%;
+        width: 85%;
+        height: 80%;
     }
     .sub-store-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10%;
     }
     .store-label {
-      width: 100%;
-      margin-bottom: 5px;
+        width: 100%;
+        margin-bottom: 5px;
     }
     .store-input {
-      width: 90%;
+        width: 90%;
     }
     .store-add-note {
-      width: 90%;
+        width: 90%;
     }
     .store-button {
-      width: 150px;
+        width: 150px;
     }
-  }
+}
   
