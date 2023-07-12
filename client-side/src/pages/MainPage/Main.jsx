@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 function Main() {
     const navigate = useNavigate();
-    function handleLogin(){
-        navigate('./login');
-    }
     function handleRegister(){
         navigate('./register');
+    }
+    function handleLogin(){
+        navigate('./login');
     }
     return (
         <div className="main-container">
@@ -16,7 +16,7 @@ function Main() {
                 <span className="main-heading1">Password Manager</span>
                 <p className="main-left-sec-para">
                     Elevate your online security with a password manager app. 
-                    Generate, store, and auto-fill strong passwords effortlessly. 
+                    Generate, store, and retrieve strong passwords effortlessly. 
                     Seamlessly manage and organize your credentials, never again struggling to recall forgotten passwords. 
                     Enjoy one-click logins and worry-free browsing. 
                     Protect your digital identity with advanced encryption algorithms. 

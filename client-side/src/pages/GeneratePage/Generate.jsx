@@ -3,8 +3,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaClipboard, FaTheRedYeti } from 'react-icons/fa';
 
-import { Form } from './form';
-import { getRandomChar, getSpecialChar } from './helper';
+import { Form } from './form.js';
+import { getRandomChar, getSpecialChar } from './helper.js';
 import './generate.css'
 
 function Generate() {
