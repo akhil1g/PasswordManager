@@ -2,7 +2,6 @@ import React, { useState,useEffect } from "react";
 import jwt from 'jwt-decode';
 import {useNavigate} from 'react-router-dom';
 import "./store.css";
-import Navbar from "../Navbar/Navbar";
 
 function Store() {
     const history=useNavigate();
@@ -78,7 +77,6 @@ function Store() {
 
       return (
         <div>
-          <Navbar />
         <div className="store-container">
           <form className="store-form">
             <h2 className="store-heading">Store a Password</h2>

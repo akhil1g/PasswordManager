@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-import Navbar from "../Navbar/Navbar";
 import './register.css'
 
 
@@ -27,7 +26,6 @@ const Register=function()
 
     return (
         <div>
-            <Navbar />
             <div className="outer-container-register">
             <div className="container-register">
             <form onSubmit={registerUser}>

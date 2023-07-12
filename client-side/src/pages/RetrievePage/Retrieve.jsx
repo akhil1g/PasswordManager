@@ -2,7 +2,6 @@ import React,{useEffect,useState} from "react";
 import "./retrieve.css";
 import {useNavigate} from 'react-router-dom'
 import jwt from 'jwt-decode'
-import Navbar from "../Navbar/Navbar.jsx";
 
 
 
@@ -69,7 +68,6 @@ function Cards(props) {
   
   return (
     <div>
-        <Navbar/>
     <div className="ret-container">
       <h1 className="ret-heading1">Retrieve Passwords</h1>
       {  card.map((x) => (

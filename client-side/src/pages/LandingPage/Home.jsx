@@ -2,7 +2,6 @@ import React,{useEffect, useState} from "react";
 import { Link, useLocation } from "react-router-dom";
 import jwt from 'jwt-decode'
 import {useNavigate} from 'react-router-dom'
-import Navbar from "../Navbar/Navbar";
 import './home.css'
 function Home() {
     const history=useNavigate();
