@@ -21,7 +21,7 @@ const Register=function()
         const data=await response.json();
         if(data.status==='ok')
         window.location.href="./login";
-        console.log(data);
+        // console.log(data);
     }
 
     return (

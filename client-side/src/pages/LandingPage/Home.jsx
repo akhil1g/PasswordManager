@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import jwt from 'jwt-decode'
 import {useNavigate} from 'react-router-dom'
 import './home.css'
@@ -36,7 +36,7 @@ function Home() {
             getName();
         }
       }
-    })
+    },[])
 
   return (
     <div className="home-container">

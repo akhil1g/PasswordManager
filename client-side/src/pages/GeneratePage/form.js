@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 export function Form(initialValues) {
   const [values, setValues] = useState(initialValues);

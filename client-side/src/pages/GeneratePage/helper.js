@@ -3,6 +3,6 @@ export function getRandomChar(min, max){
     return String.fromCharCode(Math.floor(Math.random()*limit)+min);
 }
 export function getSpecialChar(){
-    const specialChar="\.[]{}()<>*+-=!?^$|#@%^&<>,/:;=|~`";
+    const specialChar=".[]{}()<>*+-=!?^$|#@%^&<>,/:;=|~`";
     return specialChar[Math.floor(Math.random()*specialChar.length)];
 }

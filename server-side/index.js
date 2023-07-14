@@ -8,6 +8,7 @@ const bcrypt=require("bcryptjs");
 const crypto=require("crypto");
 const encrypt=require("./encrypt");
 const decrypt=require("./decrypt");
+const authMiddleware = require('./authmiddleware');
 const app=express();
 app.use(cors());
 app.use(express.json());
@@ -17,7 +18,7 @@ mongoose.connect('mongodb://localhost:27017/password-manager')
 
 //register route
 app.post("/api/register",async function(req,res){
-    console.log(req.body);
+    // console.log(req.body);
     try{
             const encryptedpw=await bcrypt.hash(req.body.password,10);
             // const encryptedpw=await encrypt.encrypt(req.body.password);
@@ -39,22 +40,22 @@ app.post("/api/register",async function(req,res){
 
 //login route
 app.post("/api/login",async function(req,res){
-    console.log(req.body);
+    // console.log(req.body);
     try{
            const user=await User.findOne({
             email:req.body.email, 
         })
             const isValid=await bcrypt.compare(req.body.password,user.password);
-            console.log(user);
+            // console.log(user);
             if(isValid){
                 const token=jwt.sign({name:req.body.name,email:req.body.email},"secretkey")
-                console.log("fdfdfd");
+                // console.log("fdfdfd");
                 res.json({status: 'ok', user : token});
 
             }
             else
             {
-                console.log("running");
+                // console.log("running");
                 return res.json({status : 'error', user: false});
             }
     }
@@ -66,7 +67,7 @@ app.post("/api/login",async function(req,res){
 })
 
 
-app.get("/api/home",async function(req,res){
+app.get("/api/home",authMiddleware,async function(req,res){
 try{
     const token=req.headers["x-access-token"];
    const decoded=jwt.verify(token,'secretkey');
@@ -88,11 +89,10 @@ try{
 
 
 
-app.post("/api/store",async function(req,res){
-    console.log(req.body);
+app.post("/api/store",authMiddleware,async function(req,res){
+    // console.log(req.body);
     try{
           
-        // const encryptedpw=await bcrypt.hash(req.body.webpassword,10);
           const encryptedpw=await encrypt(req.body.webpassword);
           
           const preuser= await Info.findOneAndUpdate({
@@ -119,8 +119,7 @@ app.post("/api/store",async function(req,res){
 
 })
 
-
-app.get("/api/retrieve",async function(req,res){
+app.get("/api/retrieve",authMiddleware,async function(req,res){
     console.log(req.body);
      try{
           
@@ -137,9 +136,6 @@ app.get("/api/retrieve",async function(req,res){
                 password:password.string,
             }
             newdata.push(object);
-            // element.password=password.string;
-            // console.log(element.password);
-            // newdata.push(element);
          })
          console.log(newdata);
           res.json({status : "ok",data : newdata});

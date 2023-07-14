@@ -8,7 +8,7 @@ const Login=function()
     async function loginUser(event)
     {
         event.preventDefault();
-        console.log(email,password);
+        // console.log(email,password);
         const response=await fetch('http://localhost:2000/api/login',{
             method:"POST",
             headers:{
@@ -17,7 +17,7 @@ const Login=function()
             body:JSON.stringify({email,password}),
         });
         const data=await response.json();
-        console.log(data);
+        // console.log(data);
         if(data.user)
         {
             localStorage.setItem('token',data.user);
