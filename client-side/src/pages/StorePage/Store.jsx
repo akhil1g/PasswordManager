@@ -31,6 +31,7 @@ function Store() {
         const response=await fetch('http://localhost:2000/api/store',{
                 method:"POST",
                 headers:{
+                  'x-access-token': localStorage.getItem('token'),
                     'Content-Type':'application/json'
                 },
                 body:JSON.stringify({mail,website,username,webpassword,note}),
@@ -85,7 +86,7 @@ function Store() {
               <input
                 className="store-input"
                 type="text"
-                id="username"
+                id="website"
                 placeholder="enter url.."
                 name="website"
                 value={passwordData.website}

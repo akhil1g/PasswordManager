@@ -15,12 +15,13 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     width: 60%;
 
   }
   
   form {
+    width: 100%;
     line-height: 70px;
     background-color: #ffe8d6;
     padding: 30px;
@@ -30,10 +31,11 @@ body {
   
   
 .reg-heading{
+  width: 100%;
     display: block;
     color: orange;
     text-align: center;
-    margin: 0 0 20px 90px;
+    /* margin: 0 0 20px 90px; */
     font-size: 40px;
     font-family: "Bacasime Antique", serif;
     font-weight: 200;
