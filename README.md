@@ -6,7 +6,9 @@
   * User can seamlessly manage and organize credentials, never again struggling to recall hundreds of forgotten usernames and passwords.
   * Users can easily interact with the password manager through a "master" password, which serves as the gateway to accessing their stored passwords.
   * To ensure the utmost security, the app derives a strong cryptographic master key using key stretching techniques.
-## Demo Video Link
+    
+## Demo Video Link:
+
 
 ## Tech Stack:
  1. Node.js
@@ -14,6 +16,6 @@
  3. MongoDB
  4. Reactjs
 
-## Collaboraters:
+## Contributers:
   * [Akhil Gupta](https://github.com/akhil1g) (20215090)
   * [Aarya Khandare](https://github.com/aaryak4554) (20212035) 
