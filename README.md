@@ -1,3 +1,4 @@
+
 <h1 align="center">PassWord Manager</h1>
 
 ## Introduction:
@@ -7,10 +8,32 @@
   * Users can easily interact with the password manager through a "master" password, which serves as the gateway to accessing their stored passwords.
   * To ensure the utmost security, the app derives a strong cryptographic master key using encryption techniques.
     
-## Demo Video Link:
+## Demo:
+<!--main page-->
+![1](https://github.com/akhil1g/PasswordManager/assets/136430619/1f56e1f5-8cf6-4a1e-85a1-18852fa30f01)
+<!--register page-->
+![WhatsApp Image 2023-08-16 at 11 45 51](https://github.com/akhil1g/PasswordManager/assets/136430619/305b1e0b-cb80-4706-b6fb-e74e6d091636)
+<!--login page-->
+![WhatsApp Image 2023-08-16 at 11 45 54](https://github.com/akhil1g/PasswordManager/assets/136430619/92922f15-06a0-412c-a7da-57702901d6e6)
+<!--login video-->
+
+<!--home page-->
+![WhatsApp Image 2023-08-16 at 11 45 53](https://github.com/akhil1g/PasswordManager/assets/136430619/c8c863bd-1a92-4d61-a887-fdef937a464f)
+
+<!--store page-->
+![WhatsApp Image 2023-08-16 at 11 45 50](https://github.com/akhil1g/PasswordManager/assets/136430619/9ea36973-ab89-44e8-a5fd-0134589b1877)
+<!--store video-->
+
+<!--retrieve page-->
+![WhatsApp Image 2023-08-16 at 11 45 50 (1)](https://github.com/akhil1g/PasswordManager/assets/136430619/460b8708-7acc-4bae-8c49-0d6b38324ef1)
+<!--generate page-->
+![Screenshot (127)](https://github.com/akhil1g/PasswordManager/assets/136430619/48db6061-b8a8-4482-8ffe-43f2971074fe)
+
 
 
 ## Tech Stack:
+
+
  * Node.js
  * Express.js
  * MongoDB
