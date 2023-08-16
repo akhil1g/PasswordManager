@@ -16,14 +16,13 @@
 <!--login page-->
 ![WhatsApp Image 2023-08-16 at 11 45 54](https://github.com/akhil1g/PasswordManager/assets/136430619/92922f15-06a0-412c-a7da-57702901d6e6)
 <!--login video-->
-
+https://github.com/akhil1g/PasswordManager/assets/136430619/dd2ac2a9-ef8f-4e66-af0c-5d78438ecfb1
 <!--home page-->
 ![WhatsApp Image 2023-08-16 at 11 45 53](https://github.com/akhil1g/PasswordManager/assets/136430619/c8c863bd-1a92-4d61-a887-fdef937a464f)
-
 <!--store page-->
 ![WhatsApp Image 2023-08-16 at 11 45 50](https://github.com/akhil1g/PasswordManager/assets/136430619/9ea36973-ab89-44e8-a5fd-0134589b1877)
 <!--store video-->
-
+https://github.com/akhil1g/PasswordManager/assets/136430619/ab4f8cdd-2091-4407-a083-79220f9cd8ca
 <!--retrieve page-->
 ![WhatsApp Image 2023-08-16 at 11 45 50 (1)](https://github.com/akhil1g/PasswordManager/assets/136430619/460b8708-7acc-4bae-8c49-0d6b38324ef1)
 <!--generate page-->
